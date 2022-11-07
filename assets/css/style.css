@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,300&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  background-color: hsl(229, 100%, 97%);
+  color: #1f2937;
+}
+
+h1,
+h2 {
+  font-weight: 900;
+}
+
+ul {
+  list-style: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 5rem 1rem;
+}
+
+
+/*=============== HEADER & NAV ===============*/
+.header {
+  width: 100%;
+  background-color: hsl(215, 28%, 17%);
+}
+
+
+.nav {
+  height: 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: hsl(90, 17%, 98%);
+}
+
+.nav__list {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav__link {
+  color: hsl(220, 13%, 91%);
+  font-size: 1.125rem;
+}
+
+.nav__logo:hover, 
+.nav__link:hover {
+  color: hsl(229, 100%, 97%);
+}
+
+
+/*=============== HOME ===============*/
+.home {
+  background-color: hsl(215, 28%, 17%);
+ position: relative;
+}
+
+.home__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-image: url(../images/header-wave.svg); */
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
+  /* position: absolute; */
+}
+
+.home__data {
+  width: 650px;
+}
+
+.home__title {
+  color: hsl(90, 17%, 98%);
+  font-size: 3.5rem;
+  margin-bottom: 1em;
+}
+
+.home__description {
+  color: hsl(220, 13%, 91%);
+  font-size: 1.5rem;
+  line-height: 1.4;
+  margin-bottom: 2em;
+}
+
+.btn {
+  background-color: hsl(217, 91%, 59%);
+  color: hsl(220, 13%, 91%);
+  padding: .5em 1.5em;
+  font-size: 1.5rem;
+  border-radius: 10px;
+}
+
+.wave {
+  width: 100%;
+}
+
+
+/*=============== FEATURES ===============*/
+.features__title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 3em;
+}
+
+.features__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.features__card {
+  padding: 5rem 2rem;
+  box-shadow: 0 4px 20px hsla(215, 64%, 20%, .2);
+  border-radius: 1rem;
+  text-align: center;
+  flex: 1;
+}
+
+.features__img {
+  width: 100px;
+  display: inline-block;
+  margin-bottom: 3rem;
+}
+
+.features__name {
+  margin-bottom: 1rem;
+}
+
+.features__description {
+  line-height: 1.5;
+}
